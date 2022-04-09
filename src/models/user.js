@@ -4,7 +4,7 @@ const modelSchema = new mongoose.Schema(
   {
     firstName: { type: String },
     lastName: { type: String },
-    gmail: { type: String },
+    email: { type: String },
     password: { type: String },
     mobileNumber: { type: Number },
     country: { type: String },

@@ -13,7 +13,7 @@ const getUser = async (req, res, next) => {
           return res.status(httpStatus.BAD_REQUEST).send(error);
         });
     } else {
-      await User.find({ _id: id })
+      await User.find()
         .then((data) => {
           res.status(httpStatus.OK).send(data);
         })
